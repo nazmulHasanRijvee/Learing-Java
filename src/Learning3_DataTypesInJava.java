@@ -29,6 +29,8 @@ public class Learning3_DataTypesInJava {
 
         // Only Reference types can be null
         String doc = null; // Can throw NullPointerException at runtime
+        System.out.println(doc);
+
         doc = ".docx";
 
         // Printing all values
