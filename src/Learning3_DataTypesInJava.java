@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.*;
 
 public class Learning3_DataTypesInJava {
 
@@ -33,6 +33,41 @@ public class Learning3_DataTypesInJava {
 
         doc = ".docx";
 
+        /// Reference type using wrappers: List/ArrayList, Map/HashMap, Set/HashSet, Queue/LinkedList
+        // These are all classes or collections framework in Java
+        // ArrayList actually uses an Array internally
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(1); // adding value
+        numbers.add(2);
+
+        // initializing with value
+        List<Integer> numbers2 = Arrays.asList(1, 2, 3);
+
+        // Map
+        Map<String, String> map = new HashMap<>();
+        map.put("name", "Nazmul"); // putting a key-value pair
+
+        // initializing with value using Map.of() method
+        Map<String, String> map2 =Map.of(
+                "name", "Nazmul",
+                "age", "23",
+                "Institution", "TMU"
+        );
+
+        // Set
+        Set<Integer> set = new HashSet<>();
+        set.add(1); // adding value
+
+        // initializing with value
+        Set<Integer> set2 = Set.of(1, 2, 3);
+
+        // Queue, can't be initialized with a value
+        Queue<String> queue = new LinkedList<>();
+        queue.offer("Nazmul"); // adding value
+
+
+
+
         // Printing all values
         System.out.println("Student Name: " + studentName);
         System.out.println("Age: " + age);
@@ -46,6 +81,17 @@ public class Learning3_DataTypesInJava {
         System.out.println(Arrays.toString(names));
         System.out.println(year);
         System.out.println(doc);
+
+        System.out.println(numbers);
+        System.out.println(numbers2);
+
+        System.out.println(map);
+        System.out.println(map2);
+
+        System.out.println(set);
+        System.out.println(set2);
+
+        System.out.println(queue);
     }
 
 }
