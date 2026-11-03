@@ -7,7 +7,8 @@ public class Learning13_LoopAlternativesInJava {
     public static void main(String[] args) {
         /// Loop alternatives and optimized in Java
         // there's .map(), IntStream.range() through the Streams API
-        // in Java
+        // in Java. They don't modify the Array or List just creates
+        // a processing pipeline
 
         /// .map() Method
         // with Arrays convert the to a stream like Lists .stream()
