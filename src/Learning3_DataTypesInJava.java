@@ -41,7 +41,7 @@ public class Learning3_DataTypesInJava {
         numbers.add(2);
 
         // initializing with value
-        List<Integer> numbers2 = Arrays.asList(1, 2, 3);
+        List<Integer> numbers2 = Arrays.asList(1, 2, 3); // or List.of() can be used too for converting to a List
 
         // Map
         Map<String, String> map = new HashMap<>();
