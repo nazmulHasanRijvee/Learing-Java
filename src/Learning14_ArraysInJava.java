@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.List;
 
 public class Learning14_ArraysInJava {
 
@@ -109,6 +110,13 @@ public class Learning14_ArraysInJava {
 
         System.out.println(Arrays.toString(numbers7)); // [10, 10, 10, 10, 10]
 
+        /// Arrays.asList() method
+        // Converts an Array to a List, but it can cause unsupported operation issues
+        // for some List methods like .clear()
+        List<Integer> numbers8 = Arrays.asList(1, 2, 3, 4, 5);
+
+        System.out.println(numbers8);
+
         /// Arrays.copyOf() method
         // Creates a copy of an Array with a specified length
         int[] original = {10, 20, 30};
@@ -125,7 +133,7 @@ public class Learning14_ArraysInJava {
 
         System.out.println(Arrays.toString(copied2)); // [10, 20, 30, 0, 0]
 
-        /// Array references behaviour
+        /// Array references behavior
         // This doesn't create a new Array rather refers to the same Array object
         // The same memory reference problem of List in Python, Dart
         // int[] f1 = {10, 20, 30};
