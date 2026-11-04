@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Learning12_LoopsInJava {
 
     public static void main(String[] args) {
@@ -23,6 +25,13 @@ public class Learning12_LoopsInJava {
         for (String lang : languages) {
             System.out.println(lang);
         }
+
+        /// .forEach loop using Streams API
+        int[] numbers = {1, 3, 5};
+
+        // Arrays.stream() exposes a processing pipeline
+        Arrays.stream(numbers)
+                .forEach(System.out::println);
 
         /// While loop
         // Syntax:
