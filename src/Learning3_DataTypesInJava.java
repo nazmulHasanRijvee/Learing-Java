@@ -33,7 +33,8 @@ public class Learning3_DataTypesInJava {
 
         doc = ".docx";
 
-        /// Reference type using wrappers: List/ArrayList, Map/HashMap, Set/HashSet, Queue/LinkedList
+        /// Reference type using wrappers like int -> Integer, double -> Double etc.
+        /// Collection frameworks List/ArrayList, Map/HashMap, Set/HashSet, Queue/LinkedList
         // These are all classes or collections framework in Java
         // ArrayList actually uses an Array internally
         List<Integer> numbers = new ArrayList<>();
