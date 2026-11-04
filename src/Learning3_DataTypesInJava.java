@@ -42,7 +42,7 @@ public class Learning3_DataTypesInJava {
         numbers.add(2);
 
         // initializing with value
-        List<Integer> numbers2 = Arrays.asList(1, 2, 3); // or List.of() for creating an immutable/unmodifiable
+        List<Integer> numbers2 = new ArrayList<>(List.of(1, 2, 3)); // or List.of() for creating an immutable/unmodifiable
 
         // Map
         Map<String, String> map = new HashMap<>();
