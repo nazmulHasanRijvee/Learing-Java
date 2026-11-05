@@ -13,15 +13,17 @@ public class Learning20_LambdaAndMethodExpression {
         // Java provides some built-in functional interfaces
         // Interface        Purpose                             Method
         // ---------        -------                             ------
-        // Runnable         No parameter, no return             run()
-        // Consumer<T>      Takes parameter, no return          accept()
-        // Function<T, R>   Takes parameter, returns value      apply()
-        // Predicate<T>     Takes parameter, returns boolean    test()
-        // Supplier<T>      No Parameter, returns value         get()
+        // Runnable         No parameter, no return             .run()
+        // Consumer<T>      Takes parameter, no return          .accept()
+        // Function<T, R>   Takes parameter, returns value      .apply()
+        // Predicate<T>     Takes parameter, returns boolean    .test()
+        // Supplier<T>      No Parameter, returns value         .get()
 
         // Basic Syntaxes:
 
         /// Single line, () -> expression/code
+        // Arrow label -> is not a shorthand for return it just an expression
+        // to separate the implementation or code body of the lambda
         Runnable task = () -> System.out.println("Hello Java!");
 
         task.run();
@@ -34,7 +36,7 @@ public class Learning20_LambdaAndMethodExpression {
 
         task2.run();
 
-        /// with param, (value) -> expression
+        /// with parameter/value, (value) -> expression
         Consumer<String> greet = name -> System.out.println("Hello " + name);
 
         greet.accept("Nazmul");
