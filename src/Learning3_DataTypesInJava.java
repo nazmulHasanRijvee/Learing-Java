@@ -48,12 +48,12 @@ public class Learning3_DataTypesInJava {
         Map<String, String> map = new HashMap<>();
         map.put("name", "Nazmul"); // putting a key-value pair
 
-        // initializing with value using Map.of() method
-        Map<String, String> map2 =Map.of(
+        // initializing with value using new HashMap<>(Map.of(...)))
+        Map<String, String> map2 = new HashMap<>(Map.of(
                 "name", "Nazmul",
                 "age", "23",
                 "Institution", "TMU"
-        );
+        ));
 
         // Set
         Set<Integer> set = new HashSet<>();
