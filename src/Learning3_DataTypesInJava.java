@@ -60,14 +60,11 @@ public class Learning3_DataTypesInJava {
         set.add(1); // adding value
 
         // initializing with value
-        Set<Integer> set2 = Set.of(1, 2, 3);
+        Set<Integer> set2 = new HashSet<>(Set.of(1, 2, 3));
 
-        // Queue, can't be initialized with a value
+        // Queue, can't be initialized with a value when declaring
         Queue<String> queue = new LinkedList<>();
         queue.offer("Nazmul"); // adding value
-
-
-
 
         // Printing all values
         System.out.println("Student Name: " + studentName);
