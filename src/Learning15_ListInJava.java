@@ -70,6 +70,8 @@ public class Learning15_ListInJava {
         // Converts a List to an Array
         System.out.println(numbers.toArray().length); // 4
 
+        /// NOTE: There's also .toList() and .toString() through Streams
+        // API (.stream().toList()) for converting back to List and String
 
         /// .add() method
         // adds an element to the end of the list
@@ -148,7 +150,22 @@ public class Learning15_ListInJava {
         System.out.println(original);
         System.out.println(copied);
 
+        /// There's also Streams API for List
+        // They don't modify the List just creates a processing pipeline where
+        // a bunch of methods like .sorted() can be used for sorting the elements
+        // of the List
+        List<Integer> numbers5 = new ArrayList<>(List.of(9, 3, 4));
 
+        System.out.println(numbers5.stream().sorted());
+
+        /// .skip() method
+        // skips the first specified number of  elements and returns the rest as
+        // Stream<Integer> which is then converted back to List using .toList() method
+        List<Integer> result = numbers5.stream().skip(1).toList();
+
+        System.out.println(result); // [ 3, 4]
+
+        /// NOTE: There's also .takeWhile() method too
     }
 
 }
