@@ -33,7 +33,7 @@ public class Learning12_MapInJava {
         System.out.println(map2);
 
         /// Important: Use Map.of() by itself for creating unmodifiable/immutable
-        // list instead of Arrays.asList(). So it can't be added or removed
+        // Map. So it can't be added or removed
 
         /// Maps can have null as values but keys can't be null
 
