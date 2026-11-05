@@ -1,4 +1,4 @@
-public class Learning10_ConditionalStatementIfElse {
+public class Learning15_ConditionalStatementIfElse {
 
     public static void main(String[] args) {
         /// if-else conditional statement

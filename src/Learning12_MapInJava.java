@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class Learning16_MapInJava {
+public class Learning12_MapInJava {
 
     public static void main(String[] args) {
         /// Map is a Collection framework or class (List/ArrayList) in Java

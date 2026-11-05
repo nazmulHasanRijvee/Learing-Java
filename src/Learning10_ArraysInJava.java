@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.List;
 
-public class Learning14_ArraysInJava {
+public class Learning10_ArraysInJava {
 
     public static void main(String[] args) {
         /// Arrays are reference type

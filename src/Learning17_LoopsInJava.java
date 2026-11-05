@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Learning12_LoopsInJava {
+public class Learning17_LoopsInJava {
 
     public static void main(String[] args) {
         /// for loop
